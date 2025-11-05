@@ -35,10 +35,7 @@ jobs:
           base: ""
           config_timezone: Africa/Cairo
 
-          # --- Chess Plugin ---
           plugin_chess: yes
           plugin_chess_platform: lichess.org
           plugin_chess_user: Hazem74
           plugin_chess_token: ${{ secrets.LICHESS_TOKEN }}
-          plugin_chess_show_opponents: yes
-          plugin_chess_recent_games: 5
