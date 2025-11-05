@@ -8,7 +8,7 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
-      contents: writelip_j5e3l5gkqBiPcWIfxOxA
+      contents: write
     steps:
       - name: Generate Main Metrics
         uses: lowlighter/metrics@latest
@@ -43,8 +43,10 @@ jobs:
           template: classic
           base: ""
           config_timezone: Africa/Cairo
+
           plugin_chess: yes
           plugin_chess_platform: lichess.org
           plugin_chess_user: Hazem74
+          plugin_chess_token: ${{ secrets.LICHESS_TOKEN }}
           plugin_chess_show_opponents: yes
           plugin_chess_recent_games: 5
