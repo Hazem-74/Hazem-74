@@ -11,9 +11,7 @@ jobs:
       contents: write
 
     steps:
-      # --------------------------
       # 1️ Generate Main Metrics
-      # --------------------------
       - name: Generate Main Metrics
         uses: lowlighter/metrics@latest
         with:
