@@ -28,27 +28,3 @@ jobs:
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
           plugin_languages_details: lines, bytes-size
-
-      # --------------------------
-      # 2️ Generate Chess Metrics
-      # --------------------------
-      - name: Generate Chess Metrics
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics-chess.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: Hazem-74
-          template: classic
-          base: ""
-          config_timezone: Africa/Cairo
-          debug: yes
-
-          plugin_chess: yes
-          plugin_chess_platform: lichess.org
-          plugin_chess_user: Hazem74
-          plugin_chess_token: ${{ secrets.LICHESS_TOKEN }}
-
-          # --- Display options ---
-          plugin_chess_display: rating, chart
-          plugin_chess_rating_types: bullet, blitz, rapid, classical, puzzle
-          plugin_chess_recent_games: 5
